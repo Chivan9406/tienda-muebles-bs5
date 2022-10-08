@@ -92,3 +92,7 @@ h3 {
 .categoria img:hover {
     transform: scale(1.2);
 }
+
+.galeria li:not(:last-of-type) {
+    margin-bottom: 1.5rem;
+}
