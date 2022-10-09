@@ -43,7 +43,7 @@
     <h2 class="text-center my-5">Contacto</h2>
 
     <div class="row justify-content-center">
-        <form class="col-md-8">
+        <form class="col-md-8 needs-validation" novalidate>
             <fieldset>
                 <legend class="bg-primary text-center text-white fs-2 fw-bold">Tus Datos</legend>
 
@@ -51,28 +51,32 @@
                     <label for="nombre" class="form-label">
                         Nombre:
                     </label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre">
+                    <input type="text" class="form-control" id="nombre" placeholder="Tu Nombre" required>
+                    <span class="invalid-feedback">Este campo es obligatorio</span>
                 </div>
 
                 <div class="mb-3">
                     <label for="asunto" class="form-label">
                         Asunto:
                     </label>
-                    <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+                    <input type="text" class="form-control" id="asunto" placeholder="Asunto" required>
+                    <span class="invalid-feedback">Este campo es obligatorio</span>
                 </div>
 
                 <div class="mb-3">
                     <label for="email" class="form-label">
                         Email:
                     </label>
-                    <input type="email" class="form-control" id="email" placeholder="Tu Email">
+                    <input type="email" class="form-control" id="email" placeholder="Tu Email" required>
+                    <span class="invalid-feedback">Este campo es obligatorio</span>
                 </div>
 
                 <div class="mb-3">
                     <label for="telefono" class="form-label">
                         Teléfono:
                     </label>
-                    <input type="tel" class="form-control" id="telefono" placeholder="5555555555">
+                    <input type="tel" class="form-control" id="telefono" placeholder="5555555555" required>
+                    <span class="invalid-feedback">Este campo es obligatorio</span>
                 </div>
 
                 <div class="mb-3">
@@ -80,6 +84,7 @@
                         Mensaje:
                     </label>
                     <textarea class="form-control" rows="20" id="mensaje"></textarea>
+                    <span class="valid-feedback">Correcto</span>
                 </div>
             </fieldset>
 
@@ -168,5 +173,6 @@
 </footer>
 
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
